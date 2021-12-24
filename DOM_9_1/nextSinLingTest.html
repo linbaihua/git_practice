@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul id="canon"><li id="a1">5d1</li><li id="a2">5d2</li>
+        </ul><ul id="nikon">
+            <li id="n1">d750</li>
+            <li id="n1">d850</li>
+        </ul><p id="p1">sony</p>
+
+        <script>
+            alert(document.getElementById("canon").nextSibling.id);
+            alert(document.getElementById("nikon").nextSibling.id);
+        </script>
+    </body>
+</html>
+
+<!-- 由此函数可知，nextsibling 方法返回的是同级别的下一个元素节点，而且节点与节点中间还不能
+有空格之类的东西，哪些也是节点
+例如，这里 id=canon返回下一个是Nikon
+例如，id=nikon 返回下一个是 p1 -->

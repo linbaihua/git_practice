@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>example91</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="example" style="color: grey; font-family: 'Arial',sans-serif;">
+        an example of a paragraph
+        </p>
+
+        <script>
+            window.onload=function(){
+                var para=document.getElementById("example");
+                alert(typeof para.nodeName);
+                alert(typeof para.style);
+                alert("the color is "+ para.style.color);
+                // 因为font-family时CSS样式，所以JavaScript中用驼峰来表示fontFamily
+                alert("the font-family is "+para.style.fontFamily);
+            }
+        </script>
+    </body>
+</html>
